@@ -1,4 +1,4 @@
-USE fire_police_dw
+USE DW_fire_police
 
 create table Worker(
    pesel VARCHAR(12) CONSTRAINT PESEL_CHECK2 CHECK(pesel LIKE '^\d{11}$') PRIMARY KEY,   

@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8780de08-7e3e-4c76-bd47-fe5649f1639b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW Fire Police</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT Crew On Intervention</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0d26377c-b91d-4817-a092-75fb1470796b">
+          <ID>FACT Crew On Intervention</ID>
+          <Name>FACT Crew On Intervention</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="764fe886-31e3-43c1-aabd-f5ce11a02961">
+            <DataSourceViewID>DW Fire Police</DataSourceViewID>
+            <TableID>dbo_FACT_crew_on_intervention</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT Vehicle Inspection</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="10873ddc-3c5a-4850-ae15-bd08cfacf9cd">
+          <ID>FACT Vehicle Inspection</ID>
+          <Name>FACT Vehicle Inspection</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="41b95577-7979-46f1-93ac-b1a4b74e3fb2">
+            <DataSourceViewID>DW Fire Police</DataSourceViewID>
+            <TableID>dbo_FACT_vehicle_inspection</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT Worker In Action</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6f4c0a4b-28cb-4d4d-b41b-a17679a678d0">
+          <ID>FACT Worker In Action</ID>
+          <Name>FACT Worker In Action</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0b0603ac-5dee-42d9-bb9f-f8cc432fc629">
+            <DataSourceViewID>DW Fire Police</DataSourceViewID>
+            <TableID>dbo_FACT_Worker_in_action</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Vehicle</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5331dfd7-56b5-4650-9ded-fe2ed5163853">
+          <ID>Vehicle</ID>
+          <Name>Vehicle</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dfae7c5c-e013-4b0b-8ad9-7fb6a2296ff2">
+            <DataSourceViewID>DW Fire Police</DataSourceViewID>
+            <TableID>dbo_Vehicle</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

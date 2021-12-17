@@ -1,0 +1,448 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6625233d-fd79-4644-a660-1f1f2bd51948" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW Fire Police Sample Data</ID>
+  <Name>DW Fire Police Sample Data</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DW Fire Police Sample Data</DataSourceID>
+  <Schema>
+    <xs:schema id="DW_x0020_Fire_x0020_Police_x0020_Sample_x0020_Data" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DW_x0020_Fire_x0020_Police_x0020_Sample_x0020_Data" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="c8bd5edd-4bd4-4cc3-82d3-e2457d4c6c96">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Date" msprop:design-time-name="896ab9e9-07cd-4147-bc88-df0365dd8d87" msprop:DbTableName="Date" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_date" msprop:design-time-name="353d1ebd-a37d-4fcc-8ba9-f53164efbf4e" msprop:DbColumnName="id_date" msprop:FriendlyName="id_date" type="xs:int" />
+                  <xs:element name="year" msprop:design-time-name="ffa39f02-b19f-4d7c-98d4-7ed04c3497d7" msprop:DbColumnName="year" msprop:FriendlyName="year">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="month" msprop:design-time-name="f9e4c22b-6252-4c75-9978-9d500e58b49e" msprop:DbColumnName="month" msprop:FriendlyName="month">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="day" msprop:design-time-name="07629867-9bb9-4f09-92ee-9a4891d10856" msprop:DbColumnName="day" msprop:FriendlyName="day">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_crew_on_intervention" msprop:design-time-name="822ce264-364f-4a65-b171-7feef4d1a915" msprop:DbTableName="FACT_crew_on_intervention" msprop:FriendlyName="FACT_crew_on_intervention" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_fact_crew_on_intervention" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d43f5404-dd52-4d14-a969-0ecee854d816" msprop:DbColumnName="id_fact_crew_on_intervention" msprop:FriendlyName="id_fact_crew_on_intervention" type="xs:int" />
+                  <xs:element name="id_intervention_type" msprop:design-time-name="5ec3458b-795b-4f37-ba11-d627de87a221" msprop:DbColumnName="id_intervention_type" msprop:FriendlyName="id_intervention_type" type="xs:int" />
+                  <xs:element name="id_vehicle_vin" msprop:design-time-name="55892209-9c0e-46bc-aaff-17dc80e0dbc2" msprop:DbColumnName="id_vehicle_vin" msprop:FriendlyName="id_vehicle_vin">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_departure_location" msprop:design-time-name="32482d5f-916f-4ed1-a18d-f484568a2c48" msprop:DbColumnName="id_departure_location" msprop:FriendlyName="id_departure_location" type="xs:int" />
+                  <xs:element name="id_facility_location" msprop:design-time-name="14f0a5da-a415-42dc-83bd-d31507d1f43a" msprop:DbColumnName="id_facility_location" msprop:FriendlyName="id_facility_location" type="xs:int" />
+                  <xs:element name="id_date_of_intervention" msprop:design-time-name="6ae765f0-9cd5-4857-8f32-a02dea933847" msprop:DbColumnName="id_date_of_intervention" msprop:FriendlyName="id_date_of_intervention" type="xs:int" />
+                  <xs:element name="id_time_of_intervention" msprop:design-time-name="fad9b294-4619-4901-aba3-21cf489cd5be" msprop:DbColumnName="id_time_of_intervention" msprop:FriendlyName="id_time_of_intervention" type="xs:int" />
+                  <xs:element name="id_notification" msprop:design-time-name="3da7a81a-938e-4e75-adbe-429be7925d67" msprop:DbColumnName="id_notification" msprop:FriendlyName="id_notification" type="xs:int" />
+                  <xs:element name="time_since_notification" msprop:design-time-name="3e00e285-9cd6-460a-9091-b40c080e1aa5" msprop:DbColumnName="time_since_notification" msprop:FriendlyName="time_since_notification" type="xs:int" />
+                  <xs:element name="days_intervention_duration" msprop:design-time-name="a9ee04b9-29b2-41e2-9b3d-8e008a140217" msprop:DbColumnName="days_intervention_duration" msprop:FriendlyName="days_intervention_duration" type="xs:int" />
+                  <xs:element name="time_intervention_duration" msprop:design-time-name="e4740d4c-cb7a-442f-99d1-8f80e4f4b564" msprop:DbColumnName="time_intervention_duration" msprop:FriendlyName="time_intervention_duration" type="xs:int" />
+                  <xs:element name="number_of_impacted_people" msprop:design-time-name="2d7c6479-7cc9-4174-8a11-be394d3bfdb3" msprop:DbColumnName="number_of_impacted_people" msprop:FriendlyName="number_of_impacted_people" type="xs:int" />
+                  <xs:element name="number_of_dead_people" msprop:design-time-name="4b8839ce-c2fb-421b-9ea7-68cd9fd8a5bf" msprop:DbColumnName="number_of_dead_people" msprop:FriendlyName="number_of_dead_people" type="xs:int" />
+                  <xs:element name="success_of_intervention" msprop:design-time-name="cbce4a80-61a3-4dc0-95eb-4b06312667cf" msprop:DbColumnName="success_of_intervention" msprop:FriendlyName="success_of_intervention" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_vehicle_inspection" msprop:design-time-name="b774e183-42f3-4f6b-b780-b4968851fa7d" msprop:DbTableName="FACT_vehicle_inspection" msprop:FriendlyName="FACT_vehicle_inspection" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_vehicle_vin" msprop:design-time-name="d010873c-494b-4638-83d5-0105d23e27a6" msprop:DbColumnName="id_vehicle_vin" msprop:FriendlyName="id_vehicle_vin">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_fault" msprop:design-time-name="89f2977a-2467-4faf-8337-4c41c29e91a6" msprop:DbColumnName="id_fault" msprop:FriendlyName="id_fault" type="xs:int" />
+                  <xs:element name="id_facility_location" msprop:design-time-name="811c6102-d32d-40cf-826c-84a6cf8e3f88" msprop:DbColumnName="id_facility_location" msprop:FriendlyName="id_facility_location" type="xs:int" />
+                  <xs:element name="id_date_of_visit_at_mechanics" msprop:design-time-name="6fd5cb0b-5834-4f5c-a5cc-768010237fa9" msprop:DbColumnName="id_date_of_visit_at_mechanics" msprop:FriendlyName="id_date_of_visit_at_mechanics" type="xs:int" />
+                  <xs:element name="days_fix_duration" msprop:design-time-name="7216065f-0939-4207-9fce-fe595b78d15b" msprop:DbColumnName="days_fix_duration" msprop:FriendlyName="days_fix_duration" type="xs:int" />
+                  <xs:element name="cost" msprop:design-time-name="1da09d70-38ef-4fa9-8920-efa37c4fd0ad" msprop:DbColumnName="cost" msprop:FriendlyName="cost" type="xs:double" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_Worker_in_action" msprop:design-time-name="a64edd9a-d2ca-4146-870b-f948945d6d5c" msprop:DbTableName="FACT_Worker_in_action" msprop:FriendlyName="FACT_Worker_in_action" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_crew" msprop:design-time-name="02cb35ed-1803-4df6-8bdf-2c3da3a75a82" msprop:DbColumnName="id_crew" msprop:FriendlyName="id_crew" type="xs:int" />
+                  <xs:element name="worker_pesel_number" msprop:design-time-name="c998980d-64da-4239-b11b-a3627ad50cd4" msprop:DbColumnName="worker_pesel_number" msprop:FriendlyName="worker_pesel_number">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fault" msprop:design-time-name="76c7fc1b-36ae-41d2-bfa6-928fe109683e" msprop:DbTableName="Fault" msprop:FriendlyName="Fault" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_fault" msprop:design-time-name="46482261-c3ba-495e-a7f7-cc9255501037" msprop:DbColumnName="id_fault" msprop:FriendlyName="id_fault" type="xs:int" />
+                  <xs:element name="car_element_name" msprop:design-time-name="87756cc7-d9c8-4037-a146-e7df48f743be" msprop:DbColumnName="car_element_name" msprop:FriendlyName="car_element_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fault_severity" msprop:design-time-name="684f100e-56d9-428c-ba39-3a3fce254329" msprop:DbColumnName="fault_severity" msprop:FriendlyName="fault_severity">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="price" msprop:design-time-name="4d972776-3004-4427-aebe-00b161be9968" msprop:DbColumnName="price" msprop:FriendlyName="price">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Intervention_type" msprop:design-time-name="946fdc7e-405b-4d02-afb8-9eb2c753b3ee" msprop:DbTableName="Intervention_type" msprop:FriendlyName="Intervention_type" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_intervention_type" msprop:design-time-name="ba2bb465-33d7-4a0c-b94c-2ced0080a9c4" msprop:DbColumnName="id_intervention_type" msprop:FriendlyName="id_intervention_type" type="xs:int" />
+                  <xs:element name="name" msprop:design-time-name="634aad70-79ed-4fbc-b872-1007c812a697" msprop:DbColumnName="name" msprop:FriendlyName="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="severity" msprop:design-time-name="af7c78d1-08dd-45fd-b8ec-f35490485a19" msprop:DbColumnName="severity" msprop:FriendlyName="severity">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Location" msprop:design-time-name="32aeaf78-ab64-4153-99df-4713ad2ee7b0" msprop:DbTableName="Location" msprop:FriendlyName="Location" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_location" msprop:design-time-name="96e5b313-f4d5-4e61-985c-eb900ca54ee6" msprop:DbColumnName="id_location" msprop:FriendlyName="id_location" type="xs:int" />
+                  <xs:element name="name" msprop:design-time-name="e13f3d4f-0eb1-4fb9-b8a0-f77f02bb4503" msprop:DbColumnName="name" msprop:FriendlyName="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="region" msprop:design-time-name="0e986df1-df00-41aa-87b9-8081e82b9770" msprop:DbColumnName="region" msprop:FriendlyName="region">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="district" msprop:design-time-name="9859afc0-5b36-4f67-ba85-b3501d127e70" msprop:DbColumnName="district" msprop:FriendlyName="district" type="xs:int" />
+                  <xs:element name="closest_city" msprop:design-time-name="32ebd53f-ba2a-4835-a19d-1128dfa0ab8b" msprop:DbColumnName="closest_city" msprop:FriendlyName="closest_city">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Time" msprop:design-time-name="4800be59-138f-4412-96c5-9308a8168114" msprop:DbTableName="Time" msprop:FriendlyName="Time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_time" msprop:design-time-name="0fba52ab-cb99-4f72-a769-5a967c5c4e0d" msprop:DbColumnName="id_time" msprop:FriendlyName="id_time" type="xs:int" />
+                  <xs:element name="hours" msprop:design-time-name="81fb8b3c-2431-4e1a-93ee-c88b88d02cb1" msprop:DbColumnName="hours" msprop:FriendlyName="hours">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="minutes" msprop:design-time-name="ba63c8c4-31d4-40fa-bd89-fa78a5413e44" msprop:DbColumnName="minutes" msprop:FriendlyName="minutes">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Vehicle" msprop:design-time-name="fb2a5af3-afc6-4a8c-ace3-75d32c966100" msprop:DbTableName="Vehicle" msprop:FriendlyName="Vehicle" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="vin_number" msprop:design-time-name="e970ade0-a759-4953-a2ee-e510f2dbe9fe" msprop:DbColumnName="vin_number" msprop:FriendlyName="vin_number">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="brand_name" msprop:design-time-name="eba5359a-8770-4ecf-93dc-a793f0b735b2" msprop:DbColumnName="brand_name" msprop:FriendlyName="brand_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="model" msprop:design-time-name="162b6bab-6c46-4411-b216-6e49314d660d" msprop:DbColumnName="model" msprop:FriendlyName="model">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="size" msprop:design-time-name="8d280974-c15a-42f3-96d5-086276f72a15" msprop:DbColumnName="size" msprop:FriendlyName="size">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="registration_number" msprop:design-time-name="87bffdf1-7d38-4c08-bb12-e4eab53d256d" msprop:DbColumnName="registration_number" msprop:FriendlyName="registration_number" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="how_old" msprop:design-time-name="dfbb6b53-8237-44a0-9433-88b5d35ed4a7" msprop:DbColumnName="how_old" msprop:FriendlyName="how_old" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="departures_number" msprop:design-time-name="90c43be5-914e-48c6-9388-f41ac09ff3f2" msprop:DbColumnName="departures_number" msprop:FriendlyName="departures_number">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Worker" msprop:design-time-name="0404d709-58ef-4e17-a034-cbd23e263846" msprop:DbTableName="Worker" msprop:FriendlyName="Worker" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pesel" msprop:design-time-name="6aff5a46-00b4-403a-9f38-509cc07738a4" msprop:DbColumnName="pesel" msprop:FriendlyName="pesel">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="name" msprop:design-time-name="c17379ac-bbe0-4d73-9786-83cc61884cb0" msprop:DbColumnName="name" msprop:FriendlyName="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="surname" msprop:design-time-name="574e27fb-0b1d-40dc-8e90-89040cb683be" msprop:DbColumnName="surname" msprop:FriendlyName="surname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sex" msprop:design-time-name="96829808-f3c4-4c80-a41f-9183fd39c45e" msprop:DbColumnName="sex" msprop:FriendlyName="sex">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="how_old" msprop:design-time-name="ffc74adc-8bba-4dc4-8773-432a69abae7c" msprop:DbColumnName="how_old" msprop:FriendlyName="how_old">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="job_name" msprop:design-time-name="c8cc0d1d-12c9-4ab0-9010-bdcf8ce91e78" msprop:DbColumnName="job_name" msprop:FriendlyName="job_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="experience" msprop:design-time-name="8e9b4a03-f3cf-45d3-b35e-eabf3ccbffc3" msprop:DbColumnName="experience" msprop:FriendlyName="experience">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="is_up_to_date" msprop:design-time-name="375e156a-7576-491c-ab4c-3aa1347ca087" msprop:DbColumnName="is_up_to_date" msprop:FriendlyName="is_up_to_date">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Date" />
+          <xs:field xpath="id_date" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_crew_on_intervention_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_crew_on_intervention" />
+          <xs:field xpath="id_fact_crew_on_intervention" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_vehicle_inspection_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_vehicle_inspection" />
+          <xs:field xpath="id_vehicle_vin" />
+          <xs:field xpath="id_fault" />
+          <xs:field xpath="id_facility_location" />
+          <xs:field xpath="id_date_of_visit_at_mechanics" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_Worker_in_action_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_Worker_in_action" />
+          <xs:field xpath="id_crew" />
+          <xs:field xpath="worker_pesel_number" />
+        </xs:unique>
+        <xs:unique name="dbo_Fault_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fault" />
+          <xs:field xpath="id_fault" />
+        </xs:unique>
+        <xs:unique name="dbo_Intervention_type_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Intervention_type" />
+          <xs:field xpath="id_intervention_type" />
+        </xs:unique>
+        <xs:unique name="dbo_Location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Location" />
+          <xs:field xpath="id_location" />
+        </xs:unique>
+        <xs:unique name="dbo_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Time" />
+          <xs:field xpath="id_time" />
+        </xs:unique>
+        <xs:unique name="dbo_Vehicle_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Vehicle" />
+          <xs:field xpath="vin_number" />
+        </xs:unique>
+        <xs:unique name="dbo_Worker_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Worker" />
+          <xs:field xpath="pesel" />
+        </xs:unique>
+        <xs:keyref name="FK__FACT_Work__id_cr__440B1D61" refer="dbo_FACT_crew_on_intervention_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_Worker_in_action" />
+          <xs:field xpath="id_crew" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_Work__worke__45F365D3" refer="dbo_Worker_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_Worker_in_action" />
+          <xs:field xpath="worker_pesel_number" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_vehi__id_fa__38996AB5" refer="dbo_Location_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_vehicle_inspection" />
+          <xs:field xpath="id_facility_location" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_vehi__id_da__398D8EEE" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FACT_vehicle_inspection" />
+          <xs:field xpath="id_date_of_visit_at_mechanics" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_vehi__id_ve__36B12243" refer="dbo_Vehicle_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_vehicle_inspection" />
+          <xs:field xpath="id_vehicle_vin" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_vehi__id_fa__37A5467C" refer="dbo_Fault_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_vehicle_inspection" />
+          <xs:field xpath="id_fault" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_crew__id_in__3D5E1FD2" refer="dbo_Intervention_type_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_crew_on_intervention" />
+          <xs:field xpath="id_intervention_type" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_crew__id_ti__4222D4EF" refer="dbo_Time_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_crew_on_intervention" />
+          <xs:field xpath="id_time_of_intervention" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_crew__id_fa__403A8C7D" refer="dbo_Location_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_crew_on_intervention" />
+          <xs:field xpath="id_facility_location" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_crew__id_ve__3E52440B" refer="dbo_Vehicle_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_crew_on_intervention" />
+          <xs:field xpath="id_vehicle_vin" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_crew__id_da__412EB0B6" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FACT_crew_on_intervention" />
+          <xs:field xpath="id_date_of_intervention" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_crew__id_de__3F466844" refer="dbo_Location_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_crew_on_intervention" />
+          <xs:field xpath="id_departure_location" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <DW_x0020_Fire_x0020_Police_x0020_Sample_x0020_Data xmlns="" />
+  </Schema>
+</DataSourceView>

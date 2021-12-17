@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Implementation_VS2019_FULL_DW", "Implementation_VS2019_FULL_DW\Implementation_VS2019_FULL_DW.dwproj", "{ABFC1F39-393F-4A5E-830C-18506CE2761F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFC1F39-393F-4A5E-830C-18506CE2761F}.Development|Default.ActiveCfg = Development
+		{ABFC1F39-393F-4A5E-830C-18506CE2761F}.Development|Default.Build.0 = Development
+		{ABFC1F39-393F-4A5E-830C-18506CE2761F}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F238BF18-C158-4192-AFD3-A726AB4F166F}
+	EndGlobalSection
+EndGlobal
