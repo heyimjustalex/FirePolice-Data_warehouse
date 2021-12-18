@@ -1,7 +1,7 @@
 USE DW_fire_police
 
 create table Worker(
-   pesel VARCHAR(12) CONSTRAINT PESEL_CHECK2 CHECK(pesel LIKE '^\d{11}$') PRIMARY KEY,   
+   pesel VARCHAR(12) CONSTRAINT PESEL_CHECK2 CHECK(pesel LIKE '^\d{11}$') PRIMARY KEY ,   
    name VARCHAR(40) NOT NULL,
    surname VARCHAR(40),   
    sex VARCHAR(10) NOT NULL,
@@ -24,14 +24,14 @@ create table Vehicle(
 );
 
 create table Time(
-	id_time INT PRIMARY KEY,	
+	id_time INT IDENTITY(1,1) PRIMARY KEY,	
 	hours VARCHAR(10) NOT NULL,
 	minutes VARCHAR(10) NOT NULL
 
 );
 
 create table Date(
-	id_date INT PRIMARY KEY,	
+	id_date INT IDENTITY(1,1) PRIMARY KEY,	
 	year VARCHAR(10) NOT NULL,
 	month VARCHAR(10) NOT NULL,
 	day VARCHAR(10) NOT NULL
@@ -40,14 +40,14 @@ create table Date(
 
 
 create table Intervention_type(
-	id_intervention_type INT PRIMARY KEY,	
+	id_intervention_type INT IDENTITY(1,1) PRIMARY KEY,	
 	name VARCHAR(20) NOT NULL,
 	severity VARCHAR(10) NOT NULL CHECK (severity IN('LOW', 'MEDIUM', 'HIGH','CRITICAL')),
 
 );
 
 create table Location(
-   id_location INT PRIMARY KEY, 
+   id_location INT IDENTITY(1,1) PRIMARY KEY, 
    name VARCHAR(50) NOT NULL,
    region VARCHAR(40) NOT NULL,
    district INT NOT NULL,
@@ -56,7 +56,7 @@ create table Location(
 );
 
 create table Fault(
-   id_fault INT PRIMARY KEY, 
+   id_fault INT IDENTITY(1,1) PRIMARY KEY, 
    car_element_name VARCHAR(50) NOT NULL,
    fault_severity VARCHAR(10) NOT NULL CHECK (fault_severity IN('LOW', 'MEDIUM', 'HIGH','CRITICAL')),
    price VARCHAR(10) NOT NULL CHECK (price IN ('LOW', 'MEDIUM', 'BIG','LARGE'))
