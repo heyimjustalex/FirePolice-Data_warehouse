@@ -14,12 +14,12 @@ create table Worker(
 
 create table Vehicle(
 	vin_number VARCHAR(40) PRIMARY KEY,	
-	brand_name VARCHAR(40) NOT NULL,
-	model VARCHAR(40) NOT NULL,
-	size VARCHAR(10) NOT NULL CHECK (size IN('SMALL', 'MEDIUM', 'BIG','LARGE')),
+	brand_name VARCHAR(40) ,
+	model VARCHAR(40) ,
+	size VARCHAR(10) CHECK (size IN('SMALL', 'MEDIUM', 'BIG','LARGE')),
 	registration_number VARCHAR(40),
-	how_old VARCHAR(10) NULL CHECK (how_old IN('OLD', 'MEDIUM', 'NEW')),
-	departures_number VARCHAR(15) NOT NULL, 
+	how_old VARCHAR(10)CHECK (how_old IN('OLD', 'MEDIUM', 'NEW')),
+	departures_number VARCHAR(15) , 
 
 );
 
@@ -50,7 +50,7 @@ create table Location(
    id_location INT IDENTITY(1,1) PRIMARY KEY, 
    name VARCHAR(50) NOT NULL,
    region VARCHAR(40) NOT NULL,
-   district INT NOT NULL,
+   district VARCHAR(10),
    closest_city VARCHAR(40) NOT NULL,
     
 );

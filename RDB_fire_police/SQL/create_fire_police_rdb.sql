@@ -1,4 +1,4 @@
-USE RDB_fire_police_big_T1
+USE RDB_fire_police_small_T1
 
 create table Facility(
    code VARCHAR(10) CONSTRAINT CODE_CHECK1 CHECK(code LIKE '^[A-Z][A-Z][A-Z][0-9][0-9][0-9]$') PRIMARY KEY, 
@@ -43,6 +43,8 @@ create table Ticket(
    time_end TIME NOT NULL,
    urgency_level INT CHECK (urgency_level BETWEEN 0 AND 10) NOT NULL,
    report TEXT
+
+
 ); 
 
 create table Worker(
@@ -62,9 +64,9 @@ create table Vehicle(
 	code_facility VARCHAR(10) CONSTRAINT CODE_CHECK3 CHECK(code_facility LIKE '^[A-Z][A-Z][A-Z]-[0-9][0-9][0-9]$') REFERENCES Facility(code) ON UPDATE CASCADE ON DELETE CASCADE,
 	brand_name VARCHAR(40),
 	model VARCHAR(40),
-	size VARCHAR(30),
+	size VARCHAR(30) CHECK (size IN('SMALL', 'MEDIUM', 'BIG','LARGE')) ,
 	registration_number VARCHAR(40),
-	date_of_production TEXT,
+	date_of_production date,
 	departures_number INT,
 	milage INT
 );
