@@ -1,7 +1,7 @@
-USE DW_fire_police
+USE DW_fire_police_vsmall
 --W przypadku b³êdu z "Pesel_check2"
---ALTER TABLE DW_fire_police.dbo.Worker
---DROP CONSTRAINT PESEL_CHECK2
+ALTER TABLE DW_fire_police_vsmall.dbo.Worker
+   DROP CONSTRAINT PESEL_CHECK2
 
 GO
 If (object_id('dbo.WorkerTemp') is not null) DROP TABLE dbo.WorkerTemp;
@@ -15,7 +15,7 @@ CREATE TABLE WorkerTemp(
    job_name VARCHAR(40) NOT NULL)
 GO
 
-INSERT INTO DW_fire_police.dbo.WorkerTemp(
+INSERT INTO DW_fire_police_vsmall.dbo.WorkerTemp(
 	pesel,
 	name,
 	surname,
@@ -32,7 +32,7 @@ SELECT
 	birth_date,
 	job_name
 FROM
-	RDB_fire_police_small_T1.dbo.Worker
+	RDB_fire_police_vsmall_T1.dbo.Worker
 
 
 
@@ -62,7 +62,7 @@ FROM
     WorkerTemp 
 go
 
-INSERT INTO DW_fire_police.dbo.Worker(
+INSERT INTO DW_fire_police_vsmall.dbo.Worker(
 	pesel,
 	name,
 	surname,
@@ -86,5 +86,5 @@ FROM
 SELECT * FROM RDB_fire_police_big_T1.dbo.Worker
 DROP VIEW etlWorker
 DROP TABLE dbo.WorkerTemp
-SELECT * FROM DW_fire_police.dbo.Worker
+SELECT * FROM DW_fire_police_vsmall.dbo.Worker
 

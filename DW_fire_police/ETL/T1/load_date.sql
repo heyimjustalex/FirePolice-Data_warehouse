@@ -1,4 +1,4 @@
-use DW_fire_police
+use DW_fire_police_vsmall
 go
 Declare @start_date date;
 Declare @end_date date;
@@ -10,7 +10,7 @@ Declare @date_in_process datetime = @start_date;
 
 While @date_in_process <= @end_date
 	Begin
-		Insert Into DW_fire_police.dbo.Date
+		Insert Into DW_fire_police_vsmall.dbo.Date
 		(year,
 		month,
 		day)
@@ -22,3 +22,5 @@ While @date_in_process <= @end_date
 		Set @date_in_process = DateAdd(d,1,@date_in_process);
 	End
 go
+
+SELECT * FROM Date

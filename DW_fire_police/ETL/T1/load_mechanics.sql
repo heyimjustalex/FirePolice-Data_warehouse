@@ -1,4 +1,4 @@
-USE DW_fire_police
+USE DW_fire_police_vsmall
 
 GO
 If (object_id('dbo.FaultTemp') is not null) DROP TABLE dbo.FaultTemp;
@@ -15,7 +15,7 @@ CREATE TABLE FaultTemp(id_fault INT PRIMARY KEY,
 GO
 
 BULK INSERT FaultTemp
-    FROM 'C:\Users\root\Desktop\fire_police_git\Other_data_sources\Small\MechanicReport.csv'
+    FROM 'C:\Users\root\Desktop\fire_police_git\vsmall\Other_data_sources\Small\MechanicReportT1.csv'
     WITH
     (
         FIRSTROW = 2,
@@ -48,7 +48,7 @@ FROM
 	FaultTemp
 go
 
-INSERT INTO DW_fire_police.dbo.Fault (
+INSERT INTO DW_fire_police_vsmall.dbo.Fault (
 	car_element_name,
 	fault_severity,
 	price)
@@ -63,4 +63,4 @@ FROM
 DROP VIEW etlFault
 DROP TABLE dbo.FaultTemp
 
-SELECT * FROM DW_fire_police.dbo.Fault
+SELECT * FROM DW_fire_police_vsmall.dbo.Fault

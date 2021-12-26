@@ -1,4 +1,4 @@
-use DW_fire_police
+use DW_fire_police_vsmall
 
 go
 Declare @start_minute int;
@@ -17,3 +17,5 @@ begin
 	set @start_hour = @start_hour +1;
 	set @start_minute = 0;
 end
+
+SELECT * FROM dbo.Time

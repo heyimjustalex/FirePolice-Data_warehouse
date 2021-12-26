@@ -1,7 +1,8 @@
-USE DW_fire_police
+USE DW_fire_police_vsmall
 
 create table Worker(
-   pesel VARCHAR(12) CONSTRAINT PESEL_CHECK2 CHECK(pesel LIKE '^\d{11}$') PRIMARY KEY ,   
+   id_worker int IDENTITY(1,1) PRIMARY KEY,
+   pesel VARCHAR(12) CONSTRAINT PESEL_CHECK2 CHECK(pesel LIKE '^\d{11}$') ,   
    name VARCHAR(40) NOT NULL,
    surname VARCHAR(40),   
    sex VARCHAR(10) NOT NULL,
@@ -13,13 +14,14 @@ create table Worker(
 );
 
 create table Vehicle(
-	vin_number VARCHAR(40) PRIMARY KEY,	
-	brand_name VARCHAR(40) ,
-	model VARCHAR(40) ,
-	size VARCHAR(10) CHECK (size IN('SMALL', 'MEDIUM', 'BIG','LARGE')),
+	id_vehicle INT IDENTITY(1,1) PRIMARY KEY,
+	vin_number VARCHAR(40),	
+	brand_name VARCHAR(40) NOT NULL,
+	model VARCHAR(40) NOT NULL,
+	size VARCHAR(10) NOT NULL CHECK (size IN('SMALL', 'MEDIUM', 'BIG','LARGE')),
 	registration_number VARCHAR(40),
-	how_old VARCHAR(10)CHECK (how_old IN('OLD', 'MEDIUM', 'NEW')),
-	departures_number VARCHAR(15) , 
+	how_old VARCHAR(10) NULL CHECK (how_old IN('OLD', 'MEDIUM', 'NEW')),
+	departures_number VARCHAR(15) NOT NULL, 
 
 );
 
@@ -50,7 +52,7 @@ create table Location(
    id_location INT IDENTITY(1,1) PRIMARY KEY, 
    name VARCHAR(50) NOT NULL,
    region VARCHAR(40) NOT NULL,
-   district VARCHAR(10),
+   district INT,
    closest_city VARCHAR(40) NOT NULL,
     
 );
@@ -64,7 +66,7 @@ create table Fault(
 );
 
 create table FACT_vehicle_inspection(
-   id_vehicle_vin VARCHAR(40) NOT NULL REFERENCES Vehicle(vin_number) ON UPDATE CASCADE ON DELETE CASCADE,
+   id_vehicle_vin INT NOT NULL REFERENCES Vehicle(id_vehicle) ON UPDATE CASCADE ON DELETE CASCADE,
    id_fault INT NOT NULL  REFERENCES Fault(id_fault) ON UPDATE CASCADE ON DELETE CASCADE,
    id_facility_location INT NOT NULL REFERENCES Location(id_location) ON UPDATE CASCADE ON DELETE CASCADE,
    id_date_of_visit_at_mechanics INT NOT NULL REFERENCES Date(id_date) ON UPDATE CASCADE ON DELETE CASCADE,
@@ -80,7 +82,7 @@ GO
 create table FACT_crew_on_intervention(
 	id_fact_crew_on_intervention INT PRIMARY KEY IDENTITY(1,1), 
 	id_intervention_type INT NOT NULL REFERENCES Intervention_type(id_intervention_type),
-	id_vehicle_vin VARCHAR(40) NOT NULL REFERENCES Vehicle(vin_number) ,
+	id_vehicle_vin INT NOT NULL REFERENCES Vehicle(id_vehicle) ,
     id_departure_location INT NOT NULL REFERENCES Location(id_location) ,
     id_facility_location INT NOT NULL REFERENCES Location(id_location),
     id_date_of_intervention INT NOT NULL REFERENCES Date(id_date) ,
@@ -98,7 +100,7 @@ create table FACT_crew_on_intervention(
 create table FACT_Worker_in_action(
 
    id_crew INT NOT NULL REFERENCES FACT_crew_on_intervention(id_fact_crew_on_intervention) , 
-   worker_pesel_number VARCHAR(12) NOT NULL CONSTRAINT PESEL_CHECK4 CHECK(worker_pesel_number LIKE '^\d{11}$') REFERENCES Worker(pesel) 
+   worker_pesel_number INT NOT NULL REFERENCES Worker(id_worker) 
    
  
 );

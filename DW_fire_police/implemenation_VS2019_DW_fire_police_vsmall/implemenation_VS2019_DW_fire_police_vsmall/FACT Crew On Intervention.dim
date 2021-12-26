@@ -1,0 +1,202 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1cede300-2bf2-49fc-bcd6-7510764b41c8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>FACT Crew On Intervention</ID>
+  <Name>FACT Crew On Intervention</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="75bc3768-092d-4186-8524-5a945f2d5665">
+    <DataSourceViewID>DW Fire Police Vsmall</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="12662bea-cb3c-4700-8de5-4e5f3d1df077">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="d4c15f22-dc72-4bdf-919a-12cb42b39291">
+      <ID>Id Fact Crew On Intervention</ID>
+      <Name>Id Fact Crew On Intervention</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5245d38f-6ff4-45ea-ad41-5b5d4d7eccd6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3997890c-12b1-471d-9e80-932173ec1cb2">
+            <TableID>dbo_FACT_crew_on_intervention</TableID>
+            <ColumnID>id_fact_crew_on_intervention</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="464e959f-7bb3-445c-95fc-5220df032297">
+          <AttributeID>Id Departure Location</AttributeID>
+          <Name>Id Departure Location</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="321b4c1b-a5da-4488-a813-6e034c28b113">
+          <AttributeID>Id Date Of Intervention</AttributeID>
+          <Name>Id Date Of Intervention</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1ed44bae-5106-40ff-a021-8dcda389ade3">
+          <AttributeID>Id Vehicle Vin</AttributeID>
+          <Name>Id Vehicle Vin</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f91d7383-3593-4bc1-b8d5-9ae024e5fd84">
+          <AttributeID>Id Facility Location</AttributeID>
+          <Name>Id Facility Location</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fd1a2430-2fba-44aa-970e-f62901b4d43a">
+          <AttributeID>Id Time Of Intervention</AttributeID>
+          <Name>Id Time Of Intervention</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="311f1b95-b58b-4ea9-af08-eb65badcbccc">
+          <AttributeID>Id Intervention Type</AttributeID>
+          <Name>Id Intervention Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cfa64bc1-9b30-4550-9766-f42a841b9fd6">
+      <ID>Id Departure Location</ID>
+      <Name>Id Departure Location</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f7f07f12-c523-493a-9b23-d8a95098f9f4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6fc847dc-ddb9-4f58-88a1-ea06f0f18a70">
+            <TableID>dbo_FACT_crew_on_intervention</TableID>
+            <ColumnID>id_departure_location</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="67acfb72-4832-4f1f-b39a-727347a9a39f">
+      <ID>Id Date Of Intervention</ID>
+      <Name>Id Date Of Intervention</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a54cd93-1e8d-4031-808b-010a097b2f20">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="25b691b4-1e6d-428d-8734-10115f433729">
+            <TableID>dbo_FACT_crew_on_intervention</TableID>
+            <ColumnID>id_date_of_intervention</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="842b88fd-76f5-4540-ac88-769c4b4bb08f">
+      <ID>Id Vehicle Vin</ID>
+      <Name>Id Vehicle Vin</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0af0d7cb-8ad6-45c9-96b1-613ea3cd2059">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d66c2478-3b8a-472e-9424-2ad4b3bbfe75">
+            <TableID>dbo_FACT_crew_on_intervention</TableID>
+            <ColumnID>id_vehicle_vin</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="44b935fb-e4ed-44fa-9a44-1bd0cf850069">
+      <ID>Id Facility Location</ID>
+      <Name>Id Facility Location</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="901341fd-659d-42bb-94df-060833071033">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="61430ac5-2b34-4c9b-b427-5a8406ba69e4">
+            <TableID>dbo_FACT_crew_on_intervention</TableID>
+            <ColumnID>id_facility_location</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="63d520c7-a8b0-4d89-b504-bab2f7a74f9c">
+      <ID>Id Time Of Intervention</ID>
+      <Name>Id Time Of Intervention</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ff4ef6c-5370-44f5-af62-61c232b51e2b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4f405471-1242-4860-a14a-ee7d803a2db5">
+            <TableID>dbo_FACT_crew_on_intervention</TableID>
+            <ColumnID>id_time_of_intervention</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aca7ab37-f2e6-4ef6-8208-0e46ee77e712">
+      <ID>Id Intervention Type</ID>
+      <Name>Id Intervention Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3d06c15-3f1b-4479-a056-2770ee4af422">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b55447c-8e32-4c0a-84b3-3b74b2e0daf5">
+            <TableID>dbo_FACT_crew_on_intervention</TableID>
+            <ColumnID>id_intervention_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

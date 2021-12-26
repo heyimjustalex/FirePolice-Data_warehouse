@@ -1,10 +1,10 @@
-use DW_fire_police
+use DW_fire_police_vsmall
 GO
 
 DECLARE @today_date date;
 SET @today_date = '2022-01-01';
 DECLARE @row_num int;
-SELECT @row_num = COUNT (*) FROM RDB_fire_police_small_T1.dbo.Vehicle;
+SELECT @row_num = COUNT (*) FROM RDB_fire_police_vsmall_T1.dbo.Vehicle;
 
 
 create table temporary_vehicle(
@@ -22,13 +22,11 @@ create table temporary_vehicle(
 
 INSERT INTO temporary_vehicle(vin_number,brand_name, model,size,registration_number, departures_number,date_of_production) 
 SELECT RDB_Vehicle.vin_number, RDB_Vehicle.brand_name, RDB_Vehicle.model,RDB_Vehicle.size, RDB_Vehicle.registration_number,RDB_Vehicle.departures_number,RDB_Vehicle.date_of_production
-FROM RDB_fire_police_small_T1.dbo.Vehicle AS RDB_Vehicle;
+FROM RDB_fire_police_vsmall_T1.dbo.Vehicle AS RDB_Vehicle;
 
+SELECT * FROM RDB_fire_police_vsmall_T1.dbo.Vehicle
 --INSERT INTO temporary_vehicle(vin_number,date_of_production) VALUES ('12433252345','2020-01-01');
 --INSERT INTO temporary_vehicle(vin_number,date_of_production) VALUES ('124332523455','2005-01-01');
-
-
-
 
 DECLARE @i int;
 SET @i = 1;
@@ -85,4 +83,6 @@ SELECT vin_number, brand_name,model,size, registration_number,how_old,departures
 FROM  temporary_vehicle;
 
 --drop temporary table
-DROP TABLE temporary_vehicle;
+--DROP TABLE temporary_vehicle;
+
+SELECT * FROM DW_fire_police_vsmall.dbo.Vehicle
