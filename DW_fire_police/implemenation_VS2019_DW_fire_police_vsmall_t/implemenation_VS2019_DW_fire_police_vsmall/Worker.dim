@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="29be2dcc-17a8-41ac-8cf9-b4b304062120" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>Intervention Type</ID>
-  <Name>Intervention Type</Name>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3570e445-65b5-4c1a-8416-bc72bbd32915" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Worker</ID>
+  <Name>Worker</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -42,26 +42,26 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="eae4e97a-ad24-436f-9a9e-86ed28f485ce">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="98f6997c-0ba3-492d-a282-f2d3ee7fb509">
     <DataSourceViewID>DW Fire Police Vsmall</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="8883bd79-793f-4319-9451-1063dc6a4d9e">
+  <ErrorConfiguration dwd:design-time-name="30cafe36-e2a4-414b-b906-63278e3b4ed9">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="94233f51-9e3c-4cc8-834c-d0fd93303dc4">
-      <ID>Id Intervention Type</ID>
-      <Name>Id Intervention Type</Name>
+    <Attribute dwd:design-time-name="615314dc-cc47-40a5-aa45-f4778ba808b5">
+      <ID>Id Worker</ID>
+      <Name>Id Worker</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0698fe3c-e0b0-4f3d-824a-7c67c4bbef0b">
+        <KeyColumn dwd:design-time-name="1b8ac50b-259d-4149-8b2b-a16b9eaa1ec1">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ed9f60c-87f1-49ff-b303-82b02e9b8714">
-            <TableID>dbo_Intervention_type</TableID>
-            <ColumnID>id_intervention_type</ColumnID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2adfb334-8cba-4613-8017-1ddac842d3b6">
+            <TableID>dbo_Worker</TableID>
+            <ColumnID>id_worker</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>

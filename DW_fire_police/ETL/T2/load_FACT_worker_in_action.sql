@@ -55,4 +55,4 @@ WHEN NOT MATCHED
 THEN INSERT VALUES(SOURCE_T.id_crew, SOURCE_T.worker_pesel_number);
 
 
-DROP TABLE temporary_WIA_T2;
+--DROP TABLE temporary_WIA_T2;

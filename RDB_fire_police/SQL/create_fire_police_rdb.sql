@@ -1,4 +1,4 @@
-USE RDB_fire_police_vsmall_T1
+USE RDB_fire_police_vsmall_T2
 
 create table Facility(
    code VARCHAR(10) CONSTRAINT CODE_CHECK1 CHECK(code LIKE '^[A-Z][A-Z][A-Z][0-9][0-9][0-9]$') PRIMARY KEY, 
