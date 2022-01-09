@@ -24,10 +24,6 @@
       <FullPath>Location.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Date.dim</Name>
-      <FullPath>Date.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Vehicle.dim</Name>
       <FullPath>Vehicle.dim</FullPath>
     </ProjectItem>
@@ -50,6 +46,10 @@
     <ProjectItem>
       <Name>Worker.dim</Name>
       <FullPath>Worker.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

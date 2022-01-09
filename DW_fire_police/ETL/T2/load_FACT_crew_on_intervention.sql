@@ -153,12 +153,17 @@ BEGIN
 	FROM RDB_fire_police_vsmall_T2.dbo.Crew_on_intervention
 	WHERE  id_action_crew = @i;
 
-	DECLARE @id_veh INT
+
+		DECLARE @id_veh INT;
+	DECLARE @temp_vin VARCHAR(40);
+	SELECT @temp_vin=temporary_COI_T2.vehicle_vin FROM temporary_COI_T2 WHERE id = @i;
 
 	SELECT 
 	@id_veh = Vehicle.id_vehicle
 	FROM DW_fire_police_vsmall.dbo.Vehicle,temporary_COI_T2
-	WHERE DW_fire_police_vsmall.dbo.Vehicle.vin_number = temporary_COI_T2.vehicle_vin;
+	WHERE DW_fire_police_vsmall.dbo.Vehicle.vin_number = @temp_vin;
+
+
 
 
 	--COMBINE DATES WITH TIME

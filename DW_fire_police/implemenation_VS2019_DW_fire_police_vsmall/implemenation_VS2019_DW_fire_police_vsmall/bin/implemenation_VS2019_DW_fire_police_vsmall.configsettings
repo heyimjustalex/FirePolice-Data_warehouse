@@ -16,9 +16,6 @@
         <ID>Location</ID>
       </Dimension>
       <Dimension>
-        <ID>Date</ID>
-      </Dimension>
-      <Dimension>
         <ID>Vehicle</ID>
       </Dimension>
       <Dimension>
@@ -35,6 +32,9 @@
       </Dimension>
       <Dimension>
         <ID>Worker</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Date</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
