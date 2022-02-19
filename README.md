@@ -27,7 +27,7 @@ It's a university project which consists of few stages
 
 ![obraz](https://user-images.githubusercontent.com/21158649/146068530-9e2bd008-98ac-4903-8a9a-dc1b1ab1f20d.png)
 
-##KPI
+## KPI
 ![Screenshot_856](https://user-images.githubusercontent.com/21158649/154797867-bf4fd7f6-9762-4acc-afc0-9bbae2cd9986.png)
 
 
