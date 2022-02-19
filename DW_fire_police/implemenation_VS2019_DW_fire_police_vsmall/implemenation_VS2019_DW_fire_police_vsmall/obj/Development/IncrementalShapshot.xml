@@ -19,77 +19,77 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>EuofLNAPrkRGisTFN/SUx0jK6E0=27.12.2021 16:43:4727.12.2021 16:43:47</TimeStamp>
+        <TimeStamp>EuofLNAPrkRGisTFN/SUx0jK6E0=27.12.2021 19:00:5027.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>DW Fire Police Vsmall</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>rr+uGQ5UiE1TxlMwEWDo/koItc4=27.12.2021 16:45:5827.12.2021 16:45:58</TimeStamp>
+        <TimeStamp>UsBr4zd/kQr9Cv94jpWskyRsW1E=06.01.2022 15:00:2727.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>DW Fire Police Vsmall</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>FV+t7kP8pA328McEGujWB4PNCD4=27.12.2021 17:04:2527.12.2021 16:46:26</TimeStamp>
+        <TimeStamp>hRWaGOrg5QgFbeMciJaYrNNrMw8=12.01.2022 09:28:0927.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>Location</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>N6pFzfZOntxt6aB9KeU3vYj6qaM=27.12.2021 17:04:2527.12.2021 16:46:26</TimeStamp>
-        <ID>
-          <String>Date</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>xl6XlE9Cyy4ye2q+sy7ba2HdouY=27.12.2021 16:46:2627.12.2021 16:46:26</TimeStamp>
+        <TimeStamp>OjvNXzGGUot0UBW/fZhYa/IYfYk=12.01.2022 09:28:0927.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>Vehicle</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>jEZFaqvLwlbsVKvRPRVleQZ9rxo=27.12.2021 17:04:2527.12.2021 16:46:26</TimeStamp>
+        <TimeStamp>LzS+ukGHb6xRgeEsUn2NRh8aMlE=12.01.2022 09:45:3427.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>Time</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>NbzXTPstmz+X7NEroq1YRa8pKvE=27.12.2021 17:04:2527.12.2021 16:46:26</TimeStamp>
+        <TimeStamp>LVeukMNWfQJEH8cd5j2tpJgUA8w=12.01.2022 09:45:3427.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>Intervention Type</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>86yPkMie587FpSgQYUZYU6rRcvk=27.12.2021 16:46:2627.12.2021 16:46:26</TimeStamp>
+        <TimeStamp>MuV1WlgeAm7GDJb8euUcsynuLFI=12.01.2022 09:28:0927.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>Fault</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>IA2D6zJYIQt84lZyco5ljxTAUTE=27.12.2021 16:46:2627.12.2021 16:46:26</TimeStamp>
+        <TimeStamp>nQm6DHzoNQ7t/vMj3V0XfpAnHKQ=12.01.2022 09:45:3427.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>FACT Crew On Intervention</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>R+9e6C17bzkyYNUFw92WbyX/m6g=27.12.2021 16:46:2627.12.2021 16:46:26</TimeStamp>
+        <TimeStamp>RmeEa2OKYe/pYHxrNDEgJzJikEI=12.01.2022 09:28:0927.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>Worker</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>10w1GneyPEnp4IM0q8/agRjTxII=12.01.2022 09:28:0906.01.2022 17:51:43</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>2EMbEm2eYKiVqjmpgWLIy1N3XKs=27.12.2021 17:20:3627.12.2021 16:46:25SWSd9v1MR2ozLAoFvZfGX6OX/pA=27.12.2021 17:18:3727.12.2021 16:46:26</TimeStamp>
+        <TimeStamp>x+WLjWm/S/8Ob0zh+XOBK9Bvadc=12.01.2022 10:32:5627.12.2021 19:00:5070M3kt1qBdjR3X6s/5Ak+bJcLfA=12.01.2022 10:32:5627.12.2021 19:00:50</TimeStamp>
         <ID>
           <String>DW Fire Police Vsmall</String>
         </ID>
@@ -97,7 +97,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>0USQdYwTkzY255JT30iZ4fAVFig=27.12.2021 16:42:4827.12.2021 16:42:48</TimeStamp>
+      <TimeStamp>0USQdYwTkzY255JT30iZ4fAVFig=27.12.2021 19:00:5027.12.2021 19:00:50</TimeStamp>
       <ID>
         <String>implemenation_VS2019_DW_fire_police_vsmall</String>
       </ID>
@@ -106,5 +106,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-12-27T16:29:13.196667Z</LastDeployed>
+  <LastDeployed>2022-01-12T09:32:58.623333Z</LastDeployed>
 </DeploymentSnapshot>

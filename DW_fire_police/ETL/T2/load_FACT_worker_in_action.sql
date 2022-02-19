@@ -49,10 +49,10 @@ SELECT id_crew,id_worker FROM temporary_WIA_T2;
 
 MERGE INTO DW_fire_police_vsmall.dbo.FACT_Worker_in_action AS TARGET_T
 USING temporary_WIA_T2 AS SOURCE_T
-ON  SOURCE_T.id_crew = TARGET_T.id_fault
-AND SOURCE_T.worker_pesel_number = TARGET_T.car_element_name
+ON  SOURCE_T.id_crew = TARGET_T.id_crew
+AND SOURCE_T.id_worker = TARGET_T.worker_pesel_number
 WHEN NOT MATCHED 
-THEN INSERT VALUES(SOURCE_T.id_crew, SOURCE_T.worker_pesel_number);
+THEN INSERT VALUES(SOURCE_T.id_crew, SOURCE_T.id_worker);
 
 
 --DROP TABLE temporary_WIA_T2;
