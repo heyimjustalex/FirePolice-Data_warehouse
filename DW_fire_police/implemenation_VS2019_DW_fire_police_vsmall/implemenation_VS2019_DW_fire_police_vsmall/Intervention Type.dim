@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="80f4b771-ac5b-4a08-8aa1-e27ac86fae87" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a817548d-9c35-494e-8f5c-3efb0313f706" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Intervention Type</ID>
   <Name>Intervention Type</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,35 +68,36 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="805c3a92-6472-48b5-9c4a-e718aacd62c9">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7814c880-6d5f-4b5c-a387-3b59e0c09d06">
     <DataSourceViewID>DW Fire Police Vsmall</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="a080bdb1-a413-4fd3-8b3b-55c4a4afe4fd">
+  <ErrorConfiguration dwd:design-time-name="0eba51ea-b150-4adc-a7eb-9616c5cfa936">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="560665e7-e929-4aef-a1ae-f45539f09225">
+    <Attribute dwd:design-time-name="82ba1fb0-a566-409f-acd4-f0df26a87d06">
       <ID>Id Intervention Type</ID>
       <Name>Id Intervention Type</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>29</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9e3d3d5b-24ec-478b-aece-71023145643c">
+        <KeyColumn dwd:design-time-name="704cb786-fd0e-4d3c-990c-0ddfeb319e4f">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5399da9f-751f-4c6e-91a6-aec47cb72df4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de71bcb1-277f-4b25-a38e-9afac5d45f69">
             <TableID>dbo_Intervention_type</TableID>
             <ColumnID>id_intervention_type</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="8a17932a-7cea-482e-9703-d78b87d5fdb7">
+        <AttributeRelationship dwd:design-time-name="7114d055-b89d-4b07-bb4c-bf484fd25712">
           <AttributeID>Name</AttributeID>
           <Name>Name_</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b10ee002-95e7-410b-9076-83469afef265">
+        <AttributeRelationship dwd:design-time-name="dc6a8aee-71d1-48b5-9221-ec8b1ff8711f">
           <AttributeID>Severity</AttributeID>
           <Name>Severity</Name>
         </AttributeRelationship>
@@ -105,14 +106,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="741ac45b-2773-4323-b415-35681aed918f">
+    <Attribute dwd:design-time-name="ae933902-a70c-45e5-9305-5283bb714c38">
       <ID>Name</ID>
       <Name>Name</Name>
+      <EstimatedCount>16</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="675ad514-8104-4ce3-860d-e0e87e7408fe">
+        <KeyColumn dwd:design-time-name="114e35d9-22bf-497c-813e-7e45179ca690">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a07a3b7-c51a-42bb-9369-b75b65fef5f8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="77c8b497-10d3-444f-a72e-b685661a5aba">
             <TableID>dbo_Intervention_type</TableID>
             <ColumnID>name</ColumnID>
           </Source>
@@ -121,14 +123,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8e69ab58-539d-4959-ad09-495a38ed6c96">
+    <Attribute dwd:design-time-name="d9a6edc2-39ef-44ef-8828-d7bc39a004c8">
       <ID>Severity</ID>
       <Name>Severity</Name>
+      <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b9c579c1-a923-42e6-9ee0-f73647769066">
+        <KeyColumn dwd:design-time-name="97567bfa-d3ec-482c-be07-4da1927c34c8">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ffbb5fe-49dd-4543-aa66-7622fa5c10e1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="68071f7f-01f9-4560-b98e-6ada9475d420">
             <TableID>dbo_Intervention_type</TableID>
             <ColumnID>severity</ColumnID>
           </Source>

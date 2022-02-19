@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a1dfaf66-e017-4545-9abc-06e2ed63bf8f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b38b5d73-ac13-4811-a319-75e207176b51" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Fault</ID>
   <Name>Fault</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,39 +68,40 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d1f31d10-c1b6-4969-959b-54fcd7384202">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4073f304-736e-4b1b-a88c-e554cf500076">
     <DataSourceViewID>DW Fire Police Vsmall</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="c957b777-1b56-4035-b13a-e84f45523b77">
+  <ErrorConfiguration dwd:design-time-name="77614638-a3d3-484c-80e1-7da2f1f62608">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="d8ababf2-27ef-49c9-9d5b-d5a453b2fd10">
+    <Attribute dwd:design-time-name="ac7bf393-0516-464b-8f6b-a3190f052aa7">
       <ID>Id Fault</ID>
       <Name>Id Fault</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>211</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="46117e4f-c6c8-41f8-9ee6-b910f6fd2df1">
+        <KeyColumn dwd:design-time-name="8f699a61-cf23-457f-8efe-b75b855faecd">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="29931941-1cb3-4038-8e7f-11a24ee5153e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbe50660-ce64-4da9-b675-33b4dee73e4a">
             <TableID>dbo_Fault</TableID>
             <ColumnID>id_fault</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="10a17641-6218-4b13-9bd6-fd9e15b6c0cc">
+        <AttributeRelationship dwd:design-time-name="9e3f6684-67b2-4b62-841c-d2b30be0b813">
           <AttributeID>Car Element Name</AttributeID>
           <Name>Car Element Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d9dcc2e9-473c-4c68-8405-633313d06326">
+        <AttributeRelationship dwd:design-time-name="6b3de0d8-10ff-495f-8bed-5946e01fbba6">
           <AttributeID>Fault Severity</AttributeID>
           <Name>Fault Severity</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b563e7a5-29e3-43b3-bc06-16089c10343a">
+        <AttributeRelationship dwd:design-time-name="22140225-ba26-4f4d-a586-cc98254d4bea">
           <AttributeID>Price</AttributeID>
           <Name>Price</Name>
         </AttributeRelationship>
@@ -109,14 +110,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b0db57f0-c190-4a33-a297-6c050d874c29">
+    <Attribute dwd:design-time-name="08969bf6-b444-4d51-9ab7-4758cdbf5c0e">
       <ID>Car Element Name</ID>
       <Name>Car Element Name</Name>
+      <EstimatedCount>11</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="502359d5-3216-41ce-9b7e-15b825dbfb04">
+        <KeyColumn dwd:design-time-name="8836066c-96be-404b-a7c1-803b8ce5c039">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="19f5219c-16cb-470d-8247-98d37bf9e543">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69317bdd-60de-4fc4-964c-76a55f8dd624">
             <TableID>dbo_Fault</TableID>
             <ColumnID>car_element_name</ColumnID>
           </Source>
@@ -125,14 +127,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="67ce2193-311a-4f3f-b708-0b6dfa21d408">
+    <Attribute dwd:design-time-name="b977e0a4-40a2-494a-8c0d-b2ada3fa133d">
       <ID>Fault Severity</ID>
       <Name>Fault Severity</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f7f52f7d-2b36-44a9-bcf2-eac2d2a7055c">
+        <KeyColumn dwd:design-time-name="ca43c76d-ef0a-4e83-96ba-82ebcf8bc4f7">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="dd6ac8ae-1152-4a5f-ac20-75a6a551ddd9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cd3eac9-bc5c-4219-bf9e-a9239f39ae01">
             <TableID>dbo_Fault</TableID>
             <ColumnID>fault_severity</ColumnID>
           </Source>
@@ -141,14 +144,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="43cfede4-0b31-4e2e-ac1c-80e0624fe200">
+    <Attribute dwd:design-time-name="67a8dcb5-586e-4efd-ae5f-572fdb0856b3">
       <ID>Price</ID>
       <Name>Price</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="28b9298e-272c-4519-9950-a6091731aabe">
+        <KeyColumn dwd:design-time-name="4d11a5bb-4bd1-498e-9ff7-5fb9c41d72c7">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="22ac532d-04a8-460b-b586-f58370052e63">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8f60aab-7267-463b-b9dd-df4f2df59264">
             <TableID>dbo_Fault</TableID>
             <ColumnID>price</ColumnID>
           </Source>
