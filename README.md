@@ -6,8 +6,10 @@ It's a university project which consists of few stages
 2. Make 2 data sources - RDB and Excel sheet
 3. Write Python Data Generator for both sources with two time stamps T1 and T2
 4. Specify buissnes questions that your data warehouse will answer 
-5. Desing data warehouse and implement it
+5. Design data warehouse and implement it
 6. Load data with ETL and TSQL from both sources to data warehouse
+7. Create KPI with Microsoft Analysis Services
+8. Create charts in Power BI
 
 
 # How to set it up
